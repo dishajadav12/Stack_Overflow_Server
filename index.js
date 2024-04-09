@@ -11,11 +11,11 @@ dotenv.config();
 app.use(express.json({ limit: "30mb", extended: true }));
 app.use(express.urlencoded({ limit: "30mb", extended: true }));
 const corsOptions = {
-  origin:
-    "https://stack-overflow-client-fawn.vercel.app/" || "http://localhost:3000",
-  credentials: true, //access-control-allow-credentials:true
+  origin: "https://stack-overflow-client-fawn.vercel.app",
+  credentials: true,
   optionSuccessStatus: 200,
 };
+
 app.use(cors(corsOptions));
 
 app.get("/", (req, res) => {
