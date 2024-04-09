@@ -15,7 +15,6 @@ app.use(
     origin:
       "https://stack-overflow-client-fawn.vercel.app/" ||
       "http://localhost:3000",
-    credentials: true,
   })
 );
 
